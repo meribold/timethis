@@ -24,6 +24,16 @@ Usage of `timethis` can be nested:
 figuring things out: 0.510 seconds
 ```
 
+It's easy to use (for example) `logging` instead of `print`:
+
+```python
+>>> import logging
+>>> with timethis('computing large sum', logging.warning):
+...     x = sum(range(10**7))
+...
+WARNING:root:computing large sum: 0.218 seconds
+```
+
 [1]: https://docs.python.org/3/glossary.html#term-context-manager
 [2]: https://docs.python.org/3/reference/compound_stmts.html#with
 [3]: https://docs.python.org/3/reference/datamodel.html#context-managers
