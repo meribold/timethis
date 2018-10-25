@@ -10,6 +10,20 @@ This module provides a context manager for measuring execution times:
 computing large sum: 0.203 seconds
 ```
 
+Usage of `timethis` can be nested:
+
+```python
+>>> with timethis('figuring things out'):
+...     with timethis('computing large sum'):
+...         x = sum(range(10**7))
+...     with timethis('finding some primes'):
+...         y = [2] + [i for i in range(3, 10**4) if all(i % j != 0 for j in range(2, i // 2 + 1))]
+...
+│ computing large sum: 0.205 seconds
+│ finding some primes: 0.305 seconds
+figuring things out: 0.510 seconds
+```
+
 [1]: https://docs.python.org/3/glossary.html#term-context-manager
 [2]: https://docs.python.org/3/reference/compound_stmts.html#with
 [3]: https://docs.python.org/3/reference/datamodel.html#context-managers
