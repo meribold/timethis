@@ -40,3 +40,9 @@ WARNING:root:computing large sum: 0.218 seconds
 [4]: https://docs.python.org/3/library/timeit.html
 [5]: https://github.com/dabeaz/python-cookbook/blob/master/src/14/profiling_and_timing_your_program/timethis.py
 [6]: https://github.com/jasonamyers/python-class/blob/master/timethis.py
+
+## TODO
+
+Support only showing a message if the execution time of the measured code block exceeds
+some threshold?  One use case would be checking if something done on the UI thread causes
+lag.
