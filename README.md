@@ -1,5 +1,3 @@
-# `timethis`
-
 This module provides a context manager for measuring execution times:
 
 ```python
