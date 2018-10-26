@@ -19,7 +19,7 @@ dist:
 
 .PHONY: clean
 clean:
-	rm -rf dist/ timethis.egg-info/ build/
+	rm -rf __pycache__/ dist/ timethis.egg-info/ build/
 
 .PHONY: upload
 upload:
