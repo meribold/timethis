@@ -7,7 +7,7 @@ setuptools.setup(
     name='timethis',
     version='0.1.2',
     author='Lukas Waymann',
-    author_email='meribold@gmail.com',
+    author_email='io@meribold.org',
     description='Context manager for measuring execution times',
     long_description=long_description,
     long_description_content_type='text/markdown',
