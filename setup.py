@@ -5,7 +5,7 @@ with open('README.md') as file_object:
 
 setuptools.setup(
     name='timethis',
-    version='0.1.1',
+    version='0.1.2',
     author='Lukas Waymann',
     author_email='meribold@gmail.com',
     description='Context manager for measuring execution times',
