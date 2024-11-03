@@ -17,8 +17,8 @@ Usage of `timethis` can be nested:
 ...     with timethis('finding some primes'):
 ...         y = [2] + [i for i in range(3, 10**4) if all(i % j != 0 for j in range(2, i // 2 + 1))]
 ...
-│ computing large sum: 0.205 seconds
-│ finding some primes: 0.305 seconds
+| computing large sum: 0.205 seconds
+| finding some primes: 0.305 seconds
 figuring things out: 0.510 seconds
 ```
 
