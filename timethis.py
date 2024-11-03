@@ -16,7 +16,7 @@ def _pop_time(message=None, log=print):
     if message is None:
         return
     depth = len(_tld.time_stack)
-    log('│ ' * depth + f'{message}: {elapsed_time:.3f} seconds')
+    log('| ' * depth + f'{message}: {elapsed_time:.3f} seconds')
 
 
 @contextmanager
